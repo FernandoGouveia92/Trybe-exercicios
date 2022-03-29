@@ -1,4 +1,6 @@
-- UNix
+- Unix
 - Bash
 - Git
--autoliderança
+- Autoliderança
+- HTML
+- CSS
