@@ -43,3 +43,48 @@
 // else {
 //     console.log("Você foi reprovado...");
 // }
+
+// FOR / IN - ESTRUTURAS DE OBJETOS
+
+let pizzas = {
+    sabor:"Palmito",
+    preco: 39.90,
+    bordaDeCatupiry: true
+};
+
+for (let key in pizzas) {
+    console.log(key, pizzas[key]);  // posso utilizar, dentro do console (pizzas.nome-do-elemento) - ex.: console.log(pizzas.preco) 
+                       // Outra forma seria console.log(pizzas['preco']) ou console.log(pizzas[key])
+}
+
+let pizzasDoces = ['chocolate', 'banana', 'morango'];
+
+for (let key in pizzasDoces){
+    //console.log(pizzasDoces[key]);
+    //console.log(key);
+    // console.log(key, pizzasDoces[key], pizzasDoces);
+}
+
+// EXEMPLO FOR IN/OF //
+
+let names = {
+    person1: 'João',
+    person2: 'Maria',
+    person3: 'Jorge',
+};
+
+for (let falar in names){
+    console.log('OLá,', names[falar]);
+}
+
+//
+
+let car = {
+    model: 'A3 Sedan',
+    manufacturers: 'Audi',
+    year: 2020
+}
+
+for (let idCar in car){
+    console.log(idCar, car[idCar] );
+}
