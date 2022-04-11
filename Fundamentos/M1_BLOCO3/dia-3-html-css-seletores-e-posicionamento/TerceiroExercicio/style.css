@@ -1,0 +1,11 @@
+p, h1{
+    font-size: 20px;
+    text-align: center;
+}
+
+li:hover{
+    background-color: blue;
+}
+.ambas-as-classes{
+    list-style: none;
+}
