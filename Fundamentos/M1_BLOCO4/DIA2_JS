@@ -1,0 +1,14 @@
+DIA 2 AULA JAVA SCRIPT - ARRAYS
+
+Um 'ARRAY' é definido por [ ], na hora de determinar uma variável.
+
+Para inserir um novo elemento dentro de um array, utiliza-se o comando: nome-da-variável.push = elemento
+
+função FOR tem o seguinte formato: for (let index = 0; index < variavel.lenght; index += 1); { ---- 
+						console.log(variável[index]);
+					}
+	PRIMEIRA PARTE DA FUNÇÃO: Diz onde o index vai iniciar-se
+	SEGUNDA PARTE DA FUNÇÃO: Diz que a variável INDEX será menor do que a variável na qual está sendo utilizada a função
+	TERCEIRA PARTE DA FUNÇÃO: Diz que todas as vezes que o for repetir, vai mover-se 1 casa(posição).
+
+INDEX significa literalmente leitura do elemento. Ou seja, a função, fará com que haja uma leitura e apresentação do elemento que está naquela determinada posição.
