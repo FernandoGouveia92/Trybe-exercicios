@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8">
+    <title>HTML</title>
+    <style>
+        #titulo{
+            font-size: 65px;
+            color: orange;
+
+        }
+        #lista-de-cores{
+            background-color: rgb(124, 96, 96);
+        }
+        .cor-de-fundo{
+            background-color: aqua;
+        }
+        h1{
+            font-family: sans-serif;
+        }
+        p{
+            font-weight: 600;
+            font-size: 3em;
+            <!--Nesse caso, formatação de FontSize para aumentar o tamnanho
+                pode ser feito de duas formas. Forma padrão fontsize, e a forma 'EM'.
+                O comando EM, puxa o tamanho da fonte da tag hierarquicamente superior
+                em um nível, e multiplicar o seu tamanho, de forma equivaente.
+                Nesse caso, a tag acima é a BODY, cujo tamanho é 16px, e colocando um 3 na frente,
+                você diz que a tag é MULTIPLICADA por 3-->
+        }
+        body{
+            font-size: 16px;
+        }
+        li{
+            font-size: 35px;
+            font-style: italic;
+            text-decoration: dashed;
+            text-align: left;
+        }
+        #amarelo{
+            color: yellow;
+        }
+        #vermelho{
+            color: red;
+        }
+        #marrom{
+            color: brown;
+        }
+    </style>
+  </head>
+  <body>
+    <h1 id="titulo">Exercícios 3.2</h1>
+    <p class="cor-de-fundo">Qual é a sua cor favorita?</p>
+    <ul id="lista-de-cores" class="cor-de-fundo">
+      <li id="amarelo">Amarelo</li>
+      <li id="vermelho">Vermelho</li>
+      <li id="marrom">Marrom</li>
+    </ul>
+  </body>
+</html>
