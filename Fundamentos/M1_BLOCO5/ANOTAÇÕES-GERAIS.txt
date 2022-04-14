@@ -1,0 +1,25 @@
+MÓDULO 5 - DOM, Eventos e Web Storage
+
+ESTRUTURA DE FUNÇÃO PARA 'RECUPERAR' elementos (mudar o que está escrito dentro da tag) 
+	
+	const (nome da costante) = document.getElementById("nome da tag").innerText = "texto que substituirá o texto dentro do arquivo HTML"
+	
+	=> Nesse caso, usar INNER TEXT exibe o texto dentro da própria tag. Se eu uso INNER HTML eu altero o texto mas exibo a tag junto com o texto.
+	=> colocar o sinal de '=' o que eu escrever em seguida, será contabilizado como uma alteração no conteúdo.
+	=> Há diversas outras tags, como por exemplo style, que exibe todos os estilos dentro do arquivo CSS.
+	
+Para acessar elementos diferentes dentro de uma mesma classe:
+	
+	const (nome da costante) = document.getElementsByClass("nome da tag")[0].innerText = "text";
+	
+	=> Nesse caso, a função está acessando uma ARRAY, pois essa classe possui vários elementos. Como foi visto nas aulas de JS, para se ACESSAR UMA POSIÇÃO em uma ARRAY se usa [].
+	
+A constante, pode ser CATEGORIZADA EM UMA VARIÁVEL. Ex.:
+
+	const (nome da costante) = document.getElementById("nome da tag").innerText = "texto que substituirá o texto dentro do arquivo HTML"
+	
+	TRANSFORMANDO
+	
+	let 'variavel' = document.getElementById("nome da tag").innerText = "texto que substituirá o texto dentro do arquivo HTML"
+	
+	=> Essa variável criada pode ser percorrida com um FOR normalmente.
