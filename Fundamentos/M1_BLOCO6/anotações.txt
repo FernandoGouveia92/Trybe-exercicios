@@ -1,0 +1,139 @@
+ANOTAÇÕES BLOCO - 6
+
+O QUE SERÁ APRESENTADO: 
+    - INPUT
+    - BUTTON (yes, really)
+    - TEXTAREA
+    - SELECT
+    - FORM
+
+VIDEO 1:
+
+USAR TAG FORM, ONDE FICARÃO O BOTÃO, INPUT, ENTRE OUTROS
+Dentro dela, podemos inserir o destino de onde os dados inseridos serão enviados.
+
+Method: é o método (GET ou POST) HTTP. 
+	GET vai pelo URL
+	POST é sem ser URL
+	
+DENTRO DO 'FORM'
+	Inserir as tags que farão parte do forumulário: 
+	INPUT (definindo o tipo: number, text, etc), 
+	BUTTON (typo: submit - de submeter os dados do formulário)
+	
+VIDEO 2:
+
+INPUT e suas propriedades:
+
+	TYPE: Qual o tipo de entrada de dados que o usuário irá fazer. (explorar depois, há vários)
+	PLACEHOLDER: Texto dentro do input, usado para descrever para o USUÁRIO que dado deve ser inserido. O que é escrito, some, logo que o usuário escreve algo.
+	REQUIRED: Usado para determinar que aquele campo, em específico, é OBRIGATÓRIO preencher
+	VALUE: Posso inserir um dado, previamente (DIFERENTE DE PLACEHOLDER)
+	NAME: É literalmente o nome daquele espaço de input, e também é esse NAME que irá aparecer na URL no momento da submissão
+	
+LABEL e suas propriedades:
+	Serve para dar nome ao espaço do input (aquele nome que aparece a esquerda do input, para sinalizar o q o input deve conter).
+	FOR: Serve para escrever a descrição que irá aparecer pro usuário (como um rótulo)
+	
+TEXTAREA e suas propriedades:
+	Serve para criar um espaço para que o usuário escreva um pequeno texto.
+	Pode editar e pré-estabelecer a quantidade de linhas e colunas no campo do texto (cols & rows)
+	
+CHECKBOX e suas propriedades
+	É um FORMATO de INPUT
+	Pode ter propriedade VALUE, NAME e CHECKED(Opção de fazer o checkbox já vir marcado)
+	Cada caixinha para ser marcada, deve ser inserida novamente pelo usao da tag INPUT.
+	Se eu quiser deixar todos os checkbox (que tenham relevãncia para estarem juntos, no msm contexto) juntos, devo colocar o MESMO NAME em todos
+	
+RADIO e suas propriedades:
+	Cria uma bolinha para marcar. A diferença do RADIO para CHECKBOX é que, RADIO só pode ter 1 bolinha marcada POR CONTEXTO.
+	Contextos diferentes, tem outros conjunto de bolinhas, e delas, apenas uma pode ser marcada.
+	Se quiser mais de 1 marcação para que seja avaliado como resposta para algo, devo usar checkbox.
+	DICA: Posso inserir dentro de uma label -> consequência: Agora, o usuário pode clicar em 'qualquer parte do elemento RADIO em questão e a marcação acontece. 
+							Antes disso, só poderia marcar, se clicasse diretamente na bolinha.
+	
+DROPDOWN LIST e suas propriedades:
+	Usando a tag SELECT
+	Dentro da tag SELECT (possui NAME e ID), pode criar a tag OPTION (possui VALUE)
+	As tags OPTION inseridas repetidas vezes são o que compõe a lista apresentada pela tag SELECT
+
+INPUT PASSWORD e suas propriedades
+	Cria o campo de inserir uma senha, onde só aparecem as 'bolinhas' para esconder o que está sendo digitado
+	
+INPUT FILE e suas propriedades
+	Cria botão para inserir um arquivo
+	
+	IMPORTANTE: Quando o site tiver a opção de submeter arquivos e utilizando o MÉTODO 'POST', DEVE ESPECIFICAR A PROPRIEDADE 'ENCTYPE="multipart/form-data"
+	
+BUTTON e suas propriedades:
+	TYPE SUBMIT usado para submeter os dados inseridos
+	
+	
+	
+	
+========================================== TEXTO COPIADO DO SITE DA TRYBE ================================================
+
+De modo geral, estes são os types que podem ser usados de acordo com a aplicação do campo input:
+button : define um botão;
+
+	checkbox : permite que o usuário selecione ZERO ou MAIS opções de um número limitado de escolhas;
+	color : campos de entrada que devem conter uma cor para selecionar;
+	date : campos de entrada que devem conter uma data;
+	datetime-local : campo de entrada de data e hora, sem fuso horário;
+	email : campos de entrada que devem conter um endereço de e-mail;
+	file : campo de seleção de arquivo e um botão "Procurar" para uploads de arquivos;
+	month : permite ao usuário selecionar um mês e ano;
+	number : define um campo de entrada numérico;
+	password : os caracteres do campo de senha são mascarados (mostrados como asteriscos ou círculos);
+	radio : permite que um usuário selecione APENAS UMA de um número limitado de opções;
+	range : define um controle para inserir um número (como um controle deslizante). Intervalo padrão é de 0 a 100;
+	reset : redefinirá todos os valores do formulário para seus valores padrão;
+	search : usado para campos de pesquisa;
+	submit : envia dados de formulário a um manipulador de formulários(especificado na action do form );
+	tel : campos de entrada que devem conter um número de telefone;
+	text : campo de entrada de texto de linha única;
+	time : permite que o usuário selecione um horário (sem fuso horário);
+	url : campos de entrada que devem conter um endereço URL;
+	week : permite ao usuário selecionar uma semana e um ano.
+	
+O valor default de um type , sempre será text . Portanto, é preciso especificar de acordo com a sua necessidade.
+Como complemento, temos os atributos que são propriedades inseridas para seus inputs HTML . Com elas, você poderá adicionar funcionalidades ao seu formulário. Temos os seguintes atributos abaixo:
+
+	value : especifica um valor inicial para um campo de entrada;
+	readonly : especifica que um campo de entrada é somente leitura;
+	disabled : especifica que um campo de entrada deve ser desativado;
+	size : especifica a largura visível, em caracteres, de um campo de entrada;
+	maxlength : especifica o número máximo de caracteres permitidos em um campo de entrada;
+	min e max : especificam os valores mínimo e máximo para um campo de entrada;
+	multiple : especifica que o usuário tem permissão para inserir mais de um valor em um campo de entrada;
+	pattern : especifica uma expressão regular em relação à qual o valor do campo de entrada é verificado;
+	placeholder : especifica uma dica curta que descreve o valor esperado de um campo de entrada;
+	required : especifica que um campo de entrada deve ser preenchido antes de enviar o formulário;
+	step : especifica os intervalos de números válidos para um campo de entrada;
+	autofocus : especifica que um campo de entrada deve obter foco automaticamente quando a página é carregada;
+	height e width : especificam a altura e a largura de um elemento;
+	autocomplete : especifica se um campo de entrada deve ter o preenchimento automático ativado ou desativado.
+	
+====================================================== FIM DA CÓPIA =====================================================================	
+	
+PREVENT DEFAULT
+
+	Esse evento, quando chamado em uma função, previne uma funcionalidade PADRÃO do JavaScript.
+	
+	function getUserValue(event) {
+	  event.preventDefault
+	  console.log(inputNameUser.value);
+	  nameUser.innerHTML = inputNameUser.value;
+	}
+	button.addEventListener('click', getUserValue);
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
