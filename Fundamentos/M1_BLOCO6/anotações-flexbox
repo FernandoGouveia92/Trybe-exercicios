@@ -1,0 +1,48 @@
+ANOTAÇÕES ---- FLEX BOX ------
+
+Flexbox é uma ferramenta para auxiliar no posicionamento de blocos em um site. O Flexbox permite fazer uso de ferramentas que facilitam a vida do desenvolvedor e permitem a manipulação dos blocos de uma forma bem mais dinâmica.
+
+Dentre as várias formas de manipulação, tem que prestar atenção aos principais que são MAIN AXIS (eixo X) e CROSS AXIS (eixo Y).
+
+=================================PARTE 1
+
+ACESSANDO FLEXBOX
+
+Display: FLEX (padrão)
+
+propriedades: FLEX DIRECTION e FLEX WRAP
+
+FLEX-DIRECTION:
+		É o responsável por determinar QUEM é o EIXO PRINCIPAL (ROW - eixo X e COLUMN - eixo Y). Determinar isso, estabelece a forma básica de apresentação e posicionamento dos blocos
+		no site.
+		
+		ROW(padrão):Padroniza o eixo principal como o HORIZONTAL. (uma variável dessa propriedade é o REVERSE-ROW
+		
+		COLUMN:Padroniza o eixo principal ocmo o VERTICAL.
+		
+FLEX-WRAP:
+		É quem controla como os itens são quebrados, dentro do container. Forma padrão (nowrap)
+		
+FLEX-FLOW:
+		Junta o FLEX DIRECTION E WRAP de uma vez, inserindo propriedades das duas:
+		
+		Ex.: Flex-flow: row wrap;
+		
+=================================PARTE 2
+
+JUSTIFY CONTENT:
+		Ele é responsável por ajustar o espaçamento entre flex-items. Ele SEMPRE é feito em relação ao MAIN-AXIS, seja ele flex-direction: ROW ou COLUMN.
+		Propriedades:
+		CENTER
+		SPACE AROUND - delimita espaços entre os itens, mas não entre os lados, igualmente
+		SPACE BETWEEN - espaço entre itens é feito igualmente
+		SPACE EVENLY - espaço igual pra todos os itens e para as laterais
+		
+		
+ALIGN-ITEMS:
+		Ajusta os flex-items no CROSS-AXIS, MAS sem controle entre as diferentes linhas / colunas criadas
+		
+ALIGN-CONTENT:
+		Vai junto c o o ALIGN-ITEMS. Ajusta espaço entre linhas com propriedades iguais a do JUSTIFY CONTENT. Ele é feito com relação ao CROSS AXIS, sendo ele ROW ou COLUMN (FLEX DIRECTION).
+		
+

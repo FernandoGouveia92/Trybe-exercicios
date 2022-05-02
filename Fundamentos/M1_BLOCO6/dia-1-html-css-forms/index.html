@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>FORMULÁRIO DE VIAGEM</h1>
+    </header>
+    <form id="formulario">
+        <label for="nome">Nome: 
+            <input type="text" id="nameUser" placeholder="insira seu nome" minlength="10" maxlength="40">
+        </label>
+        <label for="email">Email: 
+            <input type="email" id="emailUser" placeholder="insira seu e-mail" minlength="10" maxlength="50">
+        </label>
+        <br>
+        <label for="opções">
+            <input type="radio" id="option-1" name="options" value="o1">Cidade
+            <input type="radio" id="option-2" name="options" value="o2">Campo
+            <input type="radio" id="option-3" name="options" value="o3">Praia
+            <input type="radio" id="option-4" name="options" value="o4">Montanhas
+        </label>
+        <br>
+        <p>Por que você deveria ganhar essa viagem?</p>
+        <textarea name="resons" id="textarea-motivo" cols="40" rows="10" placeholder="Max 500 caracteres" maxlength="500"></textarea>
+        <br>
+        <label for="travel-date">
+            <p>Qual a melhor data para a sua viagem?</p>
+            <input type="date">
+        </label>
+        <br>
+        <input type="checkbox" id="aut-foto" name="autorizacao">Eu autorizo a Trybe a utilizar minhas fotos para futuras promoções<br>
+        <input type="checkbox" id="aut-email" name="">Eu gostaria de receber e-mails com novas promoções supimpa!
+        <br>
+        <button type="submit" id="btn-send">Enviar</button>
+        <button type="reset">Apagar</button>
+    </form>
+    <script src="script.js"></script>
+</body>
+</html>
