@@ -62,3 +62,10 @@ const books = [
   ];
   
   // Adicione o código do exercício aqui:
+
+const array = []
+
+const puxandoInfo = books.map((iteracao) => `${iteracao.name} - ${iteracao.genre} - ${iteracao.author.name}`);
+
+console.log(puxandoInfo);
+

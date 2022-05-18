@@ -62,3 +62,11 @@ const books = [
   ];
   
   // Adicione o código do exercício aqui:
+  const year = new Date().getFullYear();
+
+
+const separandoPorPub = books.filter((objLivro) => (
+    year - objLivro.releaseYear > 60))
+    .sort((a, b) => a.releaseYear - b.releaseYear);
+
+console.log(separandoPorPub);
