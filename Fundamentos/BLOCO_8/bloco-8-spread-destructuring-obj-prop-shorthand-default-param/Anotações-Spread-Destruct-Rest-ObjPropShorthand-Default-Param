@@ -1,0 +1,26 @@
+ANOTAÇÕES - DIA 8.5 - SPREAD OPERATOR, PARAMETRO REST, OBJ DESTRUCT, ARRAY DESTRUCT, DEFAULT DESTRUCT, OBJ PROPERTY SHORTHAND E DEFAULT PARAMETERS
+
+
+SPREAD OPERATOR
+		O SPREAD OPERATOR FUNCIONA COMO UMA 'FORMA ABREVIADA' DE SINALIZAR O ARRAY INTEIRO. Para fazer isso, a pessoa escreve ' ... ' seguido do nome da dita array, '...array'.
+		ex.:
+		const carros = ["gol", "HB20", "focus"]
+		const motos = ["biz", "R1"]
+		
+		Na const carros vou chamar as duas arrays dentro dela, e usando o spread, já irei concatená-las automaticamente
+		
+		const veículos = [...carros, ...motos];
+		
+		const veículos = ["gol", "HB20", "focus", "biz", "R1"]
+		
+		O MESMO PODE SER FEITO EM OBJETOS
+		
+		Para chamar objetos em um objeto novo:
+		
+		const objNovo = {
+		  ...objPrimeiro
+		  ...objSegundo
+		}
+		
+PARAMETRO REST
+		
