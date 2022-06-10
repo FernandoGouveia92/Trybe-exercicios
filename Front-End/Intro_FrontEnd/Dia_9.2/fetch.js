@@ -1,17 +1,14 @@
-const { CallTracker } = require('assert');
-const fetch = require('node-fetch');
-const { ReadableStreamBYOBRequest } = require('node:stream/web');
+// const fetch = require('node-fetch');
 
-const fetchJoke = () => {
-//   const url = 'https://api.chucknorris.io/jokes/random?category=dev';
-    const url = 'icanhazdadjoke.com';
+// const fetchJoke = () => {
+//   const url = 'https://icanhazdadjoke.com/api';
 
-  fetch(url)
-    .then((response) => response.json())
-    .then((data) => console.log(data.value));
-}
+//   fetch(url)
+//     .then((response) => response.json())
+//     .then((data) => console.log(data.value));
+// }
 
-fetchJoke();
+// fetchJoke();
 
 
 // const haha = {
