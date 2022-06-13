@@ -1,0 +1,21 @@
+MEDIA QUERIES
+
+Servem para estabelecer comportamentos para páginas web de forma responsiva e dinâmica, para melhorar a experiência do usuário. Esse método faz com que a página mude sua exibição, deixando a apresentação do seu conteúdo mais agradável para o usuário. Esse método e outro semelhantes são aplicados pelo CSS.
+
+Um das formas de se utilizar no CSS seria:
+
+@media screen and (CONDIÇÃO) - ex (max-width: 768px) {
+	body {
+	  background-color: red;
+  }
+}
+
+Um comportamento dentro desse caso, pode ser quando em um outro momento, definirmos que:
+
+	BODY{
+	 BACKGROUND-COLOR: WHITE
+	 }
+	
+Sendo que fora de uma MEDIA, a página irá obecer à segunda definição de cor, e ignorar o que foi imposto no @MEDIA.
+
+Para circundar isso, podemos adicionar " !important " logo depois de definir a cor, dentro da @media, e isso vai fazer o comando dentro dela, ter prioridade.
