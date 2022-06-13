@@ -60,5 +60,14 @@ const books = [
       releaseYear: 1928,
     },
   ];
-  
-  // Adicione o código do exercício aqui:
+
+const filtrandoTudo = () =>
+  books.filter((book) =>
+    (book.genre === 'Fantasia' || book.genre === 'Ficção Científica'));
+
+const separandoOrdenAlf = (callback) => {
+    return callback().map((bookAuthor) => (bookAuthor.author.name))
+    .sort()
+};
+
+console.log(separandoOrdenAlf(filtrandoTudo));

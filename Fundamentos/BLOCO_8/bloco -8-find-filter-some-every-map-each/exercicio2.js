@@ -62,3 +62,10 @@ const books = [
   ];
   
   // Adicione o código do exercício aqui:
+// fazendo o MAP
+// const puxadoInfoPorAge = books.map((iteracao2) => `${iteracao2.releaseYear - iteracao2.author.birthYear} - ${iteracao2.author.name}`).sort();
+
+const puxadoInfoPorAge = books.map((iteracao2) => ({age: iteracao2.releaseYear - iteracao2.author.birthYear, name: iteracao2.author.name})).sort((a, b) => (a.age-b.age));
+
+
+console.log(puxadoInfoPorAge)

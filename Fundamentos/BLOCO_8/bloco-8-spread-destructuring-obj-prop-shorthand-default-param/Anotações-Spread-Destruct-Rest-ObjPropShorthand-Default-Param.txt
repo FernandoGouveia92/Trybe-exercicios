@@ -1,0 +1,124 @@
+ANOTAÇÕES - DIA 8.5 - SPREAD OPERATOR, PARAMETRO REST, OBJ DESTRUCT, ARRAY DESTRUCT, DEFAULT DESTRUCT, OBJ PROPERTY SHORTHAND E DEFAULT PARAMETERS
+
+
+SPREAD OPERATOR
+		O SPREAD OPERATOR FUNCIONA COMO UMA 'FORMA ABREVIADA' DE SINALIZAR O ARRAY INTEIRO. Para fazer isso, a pessoa escreve ' ... ' seguido do nome da dita array, '...array'.
+		ex.:
+		const carros = ["gol", "HB20", "focus"]
+		const motos = ["biz", "R1"]
+		
+		Na const carros vou chamar as duas arrays dentro dela, e usando o spread, já irei concatená-las automaticamente
+		
+		const veículos = [...carros, ...motos];
+		
+		const veículos = ["gol", "HB20", "focus", "biz", "R1"]
+		
+		O MESMO PODE SER FEITO EM OBJETOS
+		
+		Para chamar objetos em um objeto novo:
+		
+		const objNovo = {
+		  ...objPrimeiro
+		  ...objSegundo
+		}
+		
+PARAMETRO REST
+		O rest é uma forma de 'informar' para uma função que ela 'pode' ter várias variáveis, para isso fazemos da seguinte forma:
+
+		Ex.: 
+		function quantosParams(...args) {
+    	console.log('parâmetros:', args);
+    	return `Você passou ${args.length} parâmetros para a função.`;
+  		}
+  
+  		console.log(quantosParams(0, 1, 2)); // Você passou 3 parâmetros para a função.
+  		console.log(quantosParams('string', null, [1, 2, 3], { })); // Você passou 4 parâmetros para a função.
+
+		Colocando os '...' antes de declarar o primeiro argumento da função, informamos que a função, sendo futuramente chamada, poderá receber QUAISQUER número de argumentos/parâmetros
+
+
+OBJECT DESTRUCTURING
+		É uma forma de fazer uso de uma estrutura de objeto, podendo chamar os valores de suas chaves, se necessário.
+
+		Ex.:
+		const character = {
+			name: 'Luke SkyWalker',
+			age: '53',
+			description: {
+			  specieName: 'Human',
+			  jedi: true,
+			},
+			homeWorld: {
+			  name: 'Tatooine',
+			  population: '200000',
+			},
+		  };
+		  
+		  // desestruturando o objeto:
+		  const { name, age, homeWorld: { name: planetName }, description: { jedi } } = character;
+		  
+		  // imprimindo os valores:
+		  console.log(`Esse é o ${name}, ele tem ${age} anos, mora no planeta ${planetName} e, por incrível que possa parecer, ele ${jedi ? 'é um Jedi' : 'não é um Jedi'}.`);
+
+		 => Como foi mostrado, para desconstruir uma chave que contém um objeto como valor, precisamos utilizar o nome da chave seguido por :, segue a sintaxe: homeWorld: { name: planetName }
+
+		 É possível mudar nomes de chaves de um objeto, após desestruturá-lo:
+
+		 const student = {
+			a: 'Maria',
+			b: 'Turma B',
+			c: 'Matematica',
+		  };
+		  
+		  const { a: name, b: classAssigned, c: subject } = student;
+		  
+		  console.log(name); // Maria
+		  console.log(classAssigned); // Turma B
+		  console.log(subject); // Matemática
+
+		  Assim:
+
+		  const student = {
+			a: 'Maria',
+			b: 'Turma B',
+			c: 'Matematica',
+		  };
+		  const name = student.a;
+		  console.log(name); // Maria
+
+		  Mudamos o nome da chave -a- para -name-
+
+DESTRUCTURING ARRAYS
+		É basicamente a mesma coisa de desestruturar um objeto, só que com arrays. Segue exemplo ->
+
+		const arrayCountries = ['Brazil', 'Japan', 'China', 'Canada'];
+		const [firstCountry, secondCountry, thirdCountry, fourthCountry] = arrayCountries;
+
+		console.log(firstCountry); // Brazil
+		console.log(secondCountry); // Japan
+		console.log(thirdCountry); // China
+		console.log(fourthCountry); // Canada
+
+DEFAULT DESTRUCTURING
+
+		const getNationality = ({ firstName, nationality = 'Brazillian' }) => `${firstName} is ${nationality}`;
+
+		const person = {
+ 		firstName: 'João',
+  		lastName: 'Jr II',
+		};
+
+		const otherPerson = {
+  		firstName: 'Ivan',
+  		lastName: 'Ivanovich',
+  		nationality: 'Russian',
+		};
+
+		// const {nationality = 'Brazillian'} = person
+
+		console.log(getNationality(otherPerson)); // Ivan is Russian
+		console.log(getNationality(person));
+
+
+OBJECT PROPERTY SHORTHAND
+		
