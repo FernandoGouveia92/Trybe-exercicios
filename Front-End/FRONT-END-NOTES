@@ -1,0 +1,17 @@
+FRONT-END
+
+FUNÇÕES ASSÍNCRONAS
+
+Essas funções são executadas juntamente com outras, de forma que uma não depende do término do funcionamento de outras, por isso o nome 'assíncrona'. Dentro desse contexto, temos o método --setTimeOut();-- Esse método serve para que possamos determinar quanto tempo uma função leva para começar a ser executada, fazendo uso de um delay()
+
+Estrutura:
+	setTimeOut(() => {}, delay());
+
+PROMISES (CURSO CARLA)
+
+Serve, basicamente, para executar trechos de código pré definidos, apenas quando determinado dado for inserido, ou quando uma determinada ação for realizada. A PROMISE funciona como um IF que possui um break imbutido, onde, se a condição for atendida, ele executa RESOLVE, se caso contrário, executa REJECT. 
+
+Dentro de uma PROMISE, se coloca RESOLVE e REJECT. O RESOLVE serve para dizer para a função que continue a executar o programa/função. REJECT serve para 'lançar erro' caso a condição não seja atendida.
+
+Yeah.... roughly this is it...
+
