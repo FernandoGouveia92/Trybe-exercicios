@@ -87,7 +87,7 @@ button : define um botão;
 	password : os caracteres do campo de senha são mascarados (mostrados como asteriscos ou círculos);
 	radio : permite que um usuário selecione APENAS UMA de um número limitado de opções;
 	range : define um controle para inserir um número (como um controle deslizante). Intervalo padrão é de 0 a 100;
-	reset : redefinirá todos os valores do formulário para seus valores padrão;
+	reset : redefinirá todos os valores do mulário para seus valores padrão;
 	search : usado para campos de pesquisa;
 	submit : envia dados de formulário a um manipulador de formulários(especificado na action do form );
 	tel : campos de entrada que devem conter um número de telefone;
@@ -126,6 +126,8 @@ PREVENT DEFAULT
 	  nameUser.innerHTML = inputNameUser.value;
 	}
 	button.addEventListener('click', getUserValue);
+	
+
 	
 	
 	
